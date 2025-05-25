@@ -1,0 +1,21 @@
+{
+  "name": "Yoga Jigsaw puzzle",
+  "short_name": "YogaJigsaw",
+  "start_url": "https://yoga-jig-saw.glitch.me/",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.global/34d4b680-898f-4fd7-b277-ec120f30bdfa/yoga_jigsaw.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.global/34d4b680-898f-4fd7-b277-ec120f30bdfa/yoga_jigsaw.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#f99639",
+  "background_color": "#f99639",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
