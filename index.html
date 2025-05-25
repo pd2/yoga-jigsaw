@@ -12,7 +12,7 @@
     </script>
     <title>Yoga Jigsaw Puzzle</title>
     <link rel="icon" href="https://cdn.glitch.global/34d4b680-898f-4fd7-b277-ec120f30bdfa/yoga_jigsaw.png?v=1698249534643"  type="image/x-icon">
-    <link rel="manifest" href="/manifest.json" >
+    <link rel="manifest" href="manifest.json" >
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <script src="DragDropTouch.js" defer></script>
@@ -73,7 +73,7 @@
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function() {
           navigator.serviceWorker
-            .register("/serviceWorker.js")
+            .register("serviceWorker.js")
             .then(res => console.log("service worker registered"))
             .catch(err => console.log("service worker not registered", err))
         })
