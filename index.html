@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRK1ZF8SS3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WRK1ZF8SS3');
+    </script>
+    <title>Yoga Jigsaw Puzzle</title>
+    <link rel="icon" href="https://cdn.glitch.global/34d4b680-898f-4fd7-b277-ec120f30bdfa/yoga_jigsaw.png?v=1698249534643"  type="image/x-icon">
+    <link rel="manifest" href="/manifest.json" >
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <script src="DragDropTouch.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      Yoga Jigsaw Puzzle
+    </h1>
+    <p id="info">
+      Solve the jig saw puzzle of an image of an Aasana. 
+      When you get it right, you will see the details about the Aasana.
+      <br>
+      <br> Click the start game button to begin
+    </p>
+    <button type="button" class="button" id="start">
+      Start Game <i class="rocket"></i>
+    </button>
+    <p id="Aasana"></p>
+    <p id="pose"></p>
+    <p id="message"></p>
+    
+    <div class="tooltip">
+      <button id="share" onclick="ShareIt()" onmouseout="outFunc()">
+      <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+      Share</button>
+    </div>
+  
+    <p id="details"></p>
+    
+    <div class="drag-list" id="grid" oncontextmenu="return false;">
+      <template id="tile"> <div class="drag-item" draggable="true"> </div> </template>
+      <div class="drag-item" id="A" draggable="true"> </div>
+      <div class="drag-item" id="B" draggable="true"> </div>
+      <div class="drag-item" id="C" draggable="true"> </div>
+      <div class="drag-item" id="D" draggable="true"> </div>
+      <div class="drag-item" id="E" draggable="true"> </div>
+      <div class="drag-item" id="F" draggable="true"> </div>
+      <div class="drag-item" id="G" draggable="true"> </div>
+      <div class="drag-item" id="H" draggable="true"> </div>
+      <div class="drag-item" id="I" draggable="true"> </div>
+      <div class="drag-item" id="J" draggable="true"> </div>
+      <div class="drag-item" id="K" draggable="true"> </div>
+      <div class="drag-item" id="L" draggable="true"> </div>
+    </div>
+    
+    <button type="button" class="button" id="check"> Check </button>
+    
+  <main>
+    <p></p>
+    <span id="settings" style="white-space: nowrap">
+      Progression:
+    <input type="radio" id="rand" name="is_rand" value="1"><label for="rand"> Random </label>
+    <input type="radio" id="seq"  name="is_rand" value="0" checked="checked"><label for="seq"> Sequential </label>
+    </span>
+  </main>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+          navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then(res => console.log("service worker registered"))
+            .catch(err => console.log("service worker not registered", err))
+        })
+      }
+    </script>
+  <footer>
+    <span style="white-space: nowrap"> &copy; 2023 <a href="https://www.pradeepd.com/hobbies/apps">Pradeep D</a>, <a href="https://www.iseek.page">iSeek</a>. Images Courtesy: Vinay Siddaiah, yogavijnana.in </span>
+    <br> <a href="https://www.buymeacoffee.com/pradeepde">Buy me a coffee</a>
+  </footer>
+  </body>
+  
+</html>
