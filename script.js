@@ -831,7 +831,7 @@ var copyText;
 
 function ShareIt() {
   
-  let linkURL = "http://pd2.github.io/yoga-jigsaw/";
+  let linkURL = window.location.href;
   
   copyText = `#Yoga-game I learnt about ${aasana.name} in ${Math.round(elapsedTime/1000)} sec at ${linkURL}`;
   
