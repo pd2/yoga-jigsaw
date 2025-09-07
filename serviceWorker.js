@@ -1,5 +1,5 @@
 const staticDev = "yoga_jig_saw"
-const service_worker_version = "v1.41"
+const service_worker_version = "v1.42"
 const assets = [
   "index.html",
   "style.css",
