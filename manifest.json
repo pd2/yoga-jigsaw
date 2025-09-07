@@ -4,12 +4,12 @@
   "start_url": "https://pd2.github.io/yoga-jigsaw/",
   "icons": [
     {
-      "src": "https://cdn.glitch.global/34d4b680-898f-4fd7-b277-ec120f30bdfa/yoga_jigsaw.png",
+      "src": "assets/yoga_jigsaw.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.glitch.global/34d4b680-898f-4fd7-b277-ec120f30bdfa/yoga_jigsaw.png",
+      "src": "assets/yoga_jigsaw.png",
       "sizes": "256x256",
       "type": "image/png"
     }
