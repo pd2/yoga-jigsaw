@@ -12,7 +12,7 @@ const tooltip = document.getElementById("myTooltip");
 
 let aasana, startTime, index, is_playing;
 
-const cdn_path = "https://cdn.glitch.global/34d4b680-898f-4fd7-b277-ec120f30bdfa";
+const cdn_path = "assets/";
 
 const yogaasana = [
   {
